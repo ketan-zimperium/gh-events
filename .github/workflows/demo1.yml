@@ -6,11 +6,14 @@ on:
     branches:
       - main
       - 'DVOP-*'
+      - 'k2patel-*'
   workflow_dispatch:
   push:
     branches:
       - main
       - 'DVOP-*'
+    paths-ignore:
+      - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
