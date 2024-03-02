@@ -3,7 +3,14 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - main
+      - 'DVOP-*'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - 'DVOP-*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
