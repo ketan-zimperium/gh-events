@@ -12,6 +12,7 @@ on:
     branches:
       - main
       - 'DVOP-*'
+      - 'k2patel-*'
     paths-ignore:
       - '.github/workflows/*'
 jobs:
